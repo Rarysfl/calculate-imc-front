@@ -23,7 +23,14 @@
             <label for="weight"> Peso em kg </label>
             <div class="input-field">
               <i class="fa-solid fa-weight-hanging"></i>
-              <input type="number" id="weight" name="weight" required />
+              <input
+                type="text"
+                pattern="[0-9]*"
+                inputmode="numeric"
+                id="weight"
+                name="weight"
+                required
+              />
               <span> Kg </span>
             </div>
           </div>
@@ -32,13 +39,17 @@
             <label for="height"> Altura em cm </label>
             <div class="input-field">
               <i class="fa-solid fa-ruler"></i>
+
               <input
-                type="number"
+                type="text"
                 step="0.01"
+                pattern="[0-9]*"
+                inputmode="numeric"
                 id="height"
                 name="height"
                 required
               />
+
               <span> cm </span>
             </div>
           </div>
